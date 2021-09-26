@@ -1,6 +1,6 @@
 let connected = false;
 
-const socket = io('http://localhost:3003');
+const socket = io(`http://${window.location.host}`);
 socket.emit('setup', userLoggedIn);
 
 socket.on('connected', () => (connected = true));

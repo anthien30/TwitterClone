@@ -8,7 +8,7 @@ const middleware = require('./middleware');
 const app = express();
 const port = 3003;
 
-const server = app.listen(port, () => {
+const server = app.listen(process.env.PORT || port, () => {
   console.log('Server listening on port ' + 3003);
 });
 

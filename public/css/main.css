@@ -775,6 +775,11 @@ button span {
   background-color: var(--blueBackground);
 }
 
+.resultListItem.active .subText {
+  font-weight: 400;
+  color: black;
+}
+
 .resultListItem.notification * {
   pointer-events: none;
 }
