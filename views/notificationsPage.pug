@@ -1,0 +1,12 @@
+extends layouts/main-layout.pug
+
+block content 
+  .resultsContainer 
+
+block headerButton 
+  button#markAllAsRead
+    i.fas.fa-check-double
+  a(href="/messages/new") 
+
+block scripts 
+  script(src="/js/notificationsPage.js")
