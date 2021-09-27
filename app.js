@@ -68,6 +68,7 @@ app.get('/', (req, res) => {
     pageTitle: 'Home',
     userLoggedIn: req.session.user,
     userLoggedInJs: JSON.stringify(req.session.user),
+    mode: process.env.NODE_ENV,
   };
   res.status(200).render('home', payload);
 });

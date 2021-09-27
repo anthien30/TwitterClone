@@ -1,6 +1,7 @@
 let connected = false;
 
-const socket = io(`http://${window.location.host}`);
+const scheme = mode == 'development' ? 'http' : 'https';
+const socket = io(`${scheme}://${window.location.host}`);
 socket.emit('setup', userLoggedIn);
 
 socket.on('connected', () => (connected = true));
